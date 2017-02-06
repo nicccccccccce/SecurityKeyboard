@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_down"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#d2d2d2"
+        android:drawablePadding="5dp"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:gravity="center"
+        android:paddingRight="15dp"
+        android:text="正在使用海南银行安全键盘"
+        android:textColor="#4d4d4d"
+        android:textSize="16sp" />
+
+    <com.xisha.securitykeyboard.KeyBoard.KeyBoardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#d2d2d2"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/btn_keyboard_key"
+        android:keyTextColor="#4d4d4d"
+        android:keyTextSize="18sp"
+        android:shadowColor="#FFFFFF"
+        android:shadowRadius="0.0"
+        android:keyPreviewLayout="@layout/keyborad_preview_layout"/>
+</LinearLayout>
